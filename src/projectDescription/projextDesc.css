@@ -1,0 +1,39 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.arrowIcon{
+    margin-left: -2rem;
+}
+
+.navigationbar a :hover{
+  color: aqua;
+}
+@media only screen and (max-width: 620px) {
+    .verticalBar{
+        display: none;
+    }
+    .navigationbar{
+        display: none;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    }
+    .arrowIcon{
+        margin: "auto";
+    }
+    .ProjDesc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1%;
+    }
+  .projectCard{
+    width: 80%;
+    height: "auto";
+    }
+    
+}
