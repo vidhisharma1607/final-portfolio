@@ -75,7 +75,7 @@ routerLink:"/project/paws&wings"}
     <ProjectItemForVideo
     imageUrl={image6}
     title={"NID Portfolio"}
-    description={"All Indian Rank 3 | Graphic Design 2023 "}
+    description={"All India Rank 3 | Graphic Design 2023 "}
     />
         </Box>
         <Box width="80%" margin="auto"  display="flex"
