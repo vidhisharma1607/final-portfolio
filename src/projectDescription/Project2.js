@@ -72,7 +72,7 @@ const Project2 = () => {
               sx={{ bgcolor: "black" }}
               variant="square"
             >
-              
+             
                 <img
                   style={{
                     width: "100px", // increase the width as per your requirement
@@ -80,10 +80,11 @@ const Project2 = () => {
                   }}
                   src={logoRaghav}
                 />
-              
+             
             </Avatar>
           </div>
         </div>
+
 
         {/* Second column */}
         <div style={{ width: "100%" }}>
@@ -97,31 +98,33 @@ const Project2 = () => {
             }}
           >
             <Button LinkComponent={Link} to="/work">
-              <ArrowBackIcon className="arrowIcon" sx={{ color: "#0101F6" }} />
+              <ArrowBackIcon className="arrowIcon" sx={{ color: "#0101F6", paddingTop:"20px" }} />
             </Button>
           </Box>
           <Box className="ProjDesc" sx={{ flexGrow: 1, marginTop: "40px" }}>
             <Typography
               fontFamily={"Poppins"}
               fontWeight={700}
-              fontSize={{ xs: "10px", sm: "30px" }}
+              fontSize={{ xs: "30px", sm: "34px" }}
               sx={{ color: "#0101F3" }}
             >
               Cura - MicroSoft Design Challenge 2022
             </Typography>
             <Typography
               fontFamily={"Poppins"}
-              fontSize={{ xs: "10px", sm: "14px" }}
+              fontSize={{  xs: "17px", sm: "20px" }}
               lineHeight={3}
+              fontWeight={500}
               sx={{ color: "#0101F3" }}
             >
               <i>UX UI | Case study | App Design</i>
             </Typography>
-            <Box sx={{ flexGrow: 1, width: { xs: "90%", sm: "60%" } }}>
+            <Box sx={{ flexGrow: 1, width: { xs: "90%", sm: "80%" } }}>
               <Typography
                 variant="body"
+                fontWeight={500}
                 fontFamily={"Poppins"}
-                fontSize={{ xs: "8px", sm: "12px" }}
+                fontSize={{ xs: "14px", sm: "14px"  }}
                 lineHeight={-1}
                 sx={{ color: "#000000" }}
               >
@@ -150,11 +153,13 @@ const Project2 = () => {
               src={img1}
             />
 
+
             <img
               alt="image1"
               style={{ width: "100%", maxWidth: "905px", height: "auto" }}
               src={img2}
             />
+
 
             <img
               id="research"
@@ -163,11 +168,13 @@ const Project2 = () => {
               src={img3}
             />
 
+
             <img
               alt="image1"
               style={{ width: "100%", maxWidth: "905px", height: "auto" }}
               src={img4}
             />
+
 
             <img
               id="branding"
@@ -176,11 +183,13 @@ const Project2 = () => {
               src={img5}
             />
 
+
             <img
               alt="image1"
               style={{ width: "100%", maxWidth: "905px", height: "auto" }}
               src={img6}
             />
+
 
             <img
               alt="image1"
@@ -188,11 +197,13 @@ const Project2 = () => {
               src={img7}
             />
 
+
             <img
               alt="image1"
               style={{ width: "100%", maxWidth: "905px", height: "auto" }}
               src={img8}
             />
+
 
             <img
               alt="image1"
@@ -200,11 +211,13 @@ const Project2 = () => {
               src={img9}
             />
 
+
             <img
               alt="image1"
               style={{ width: "100%", maxWidth: "905px", height: "auto" }}
               src={img10}
             />
+
 
             <img
               id="solution"
@@ -213,17 +226,20 @@ const Project2 = () => {
               src={img11}
             />
 
+
             <img
               alt="image1"
               style={{ width: "100%", maxWidth: "905px", height: "auto" }}
               src={img12}
             />
 
+
             <img
               alt="image1"
               style={{ width: "100%", maxWidth: "905px", height: "auto" }}
               src={img13}
             />
+
 
             <img
               id="interface"
@@ -232,11 +248,13 @@ const Project2 = () => {
               src={img14}
             />
 
+
             <img
               alt="image1"
               style={{ width: "100%", maxWidth: "905px", height: "auto" }}
               src={img15}
             />
+
 
             <img
               alt="image1"
@@ -244,11 +262,13 @@ const Project2 = () => {
               src={img16}
             />
 
+
             <img
               alt="image1"
               style={{ width: "100%", maxWidth: "905px", height: "auto" }}
               src={img17}
             />
+
 
             <img
               id="website"
@@ -257,6 +277,7 @@ const Project2 = () => {
               src={img18}
             />
 
+
             <img
               alt="image1"
               style={{ width: "100%", maxWidth: "905px", height: "auto" }}
@@ -264,6 +285,7 @@ const Project2 = () => {
             />
           </Box>
         </div>
+
 
         {/* Third column */}
         <div
@@ -369,6 +391,7 @@ const Project2 = () => {
             💖
           </Typography>
 
+
           <Typography
             marginTop="2%"
             marginBottom="2%"
@@ -406,5 +429,6 @@ const Project2 = () => {
     </div>
   );
 };
+
 
 export default Project2;
