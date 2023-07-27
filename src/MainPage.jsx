@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import "./MainPage.css";
 import logo from "./assets/Loops/loopWOB.gif";
-import flamingo from "./assets/Loops/Flamingo.gif";
+import flamingo from "./assets/Loops/Flamingo.mp4";
 import TextPart from "./components/MainText";
 import MenuIcon from "./assets/icons/Menu.png";
 import SouthEastIcon from "./assets/icons/workArrow.png";
@@ -72,7 +72,9 @@ const App = () => {
           {/* col3 : FLAMINGO*/}
           <div className="column column-wide">
             <div className="flamingo">
-              <img src={flamingo} alt="flamingo" />
+              <video autoPlay loop muted>
+                <source src={flamingo} type="video/mp4" alt="GIF video" />
+              </video>
             </div>
           </div>
 
@@ -228,9 +230,9 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="last">
+      <div className="last" >
         Made with ❤️ by{" "}
-        <span style={{ fontWeight: "600", color: "rgba(255, 255, 255, 1)" }}>
+        <span style={{ fontWeight: "600", color: "rgba(255, 255, 255, 1)",  }}>
           {" "}
           Raghav Sharma
         </span>
