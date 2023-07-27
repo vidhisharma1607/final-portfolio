@@ -3,7 +3,7 @@
     grid-template-columns: 1fr 2fr 1fr;
 }
 .arrowIcon{
-    margin-left: -2rem;
+    margin-left: -3rem;
 }
 
 .navigationbar a :hover{
@@ -22,14 +22,15 @@
     
     }
     .arrowIcon{
+        margin-left: -1rem;
         margin: "auto";
     }
     .ProjDesc{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        margin-bottom: 1%;
+        align-items: left;
+        margin: 3%;
     }
   .projectCard{
     width: 80%;

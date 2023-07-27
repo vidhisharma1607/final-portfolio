@@ -11,8 +11,8 @@ const ProjectItemData = ({
 }) => {
   return (
    
-    <Card className='projectCard' sx={{ width: 312, height:460 , margin:"10px" , marginBottom:"25px",  background:"black" ,'@media screen and (max-width: 650px)': {
-      width: '75%', // Reduce width for mobile view
+    <Card className='projectCard' sx={{ maxWidth: 312, height:460 , margin:"10px" , marginBottom:"25px",  background:"black" ,'@media screen and (max-width: 650px)': {
+      width: '68%', // Reduce width for mobile view
       height: 'auto', // Set height to auto for mobile view to maintain aspect ratio
       margin: "4px", // Adjust margin for mobile view
     },

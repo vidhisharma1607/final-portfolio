@@ -1,11 +1,11 @@
 import React, { useState, useRef } from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import "./MainPage.css";
-import logo from "./assets/Loops/loopWOB.mp4";
-import flamingo from "./assets/Loops/Flamingo.mp4";
+import logo from "./assets/Loops/loopWOB.gif";
+import flamingo from "./assets/Loops/Flamingo.gif";
 import TextPart from "./components/MainText";
 import MenuIcon from "./assets/icons/Menu.png";
-import SouthEastIcon from "@mui/icons-material/SouthEast";
+import SouthEastIcon from "./assets/icons/workArrow.png";
 import IconButton from "@mui/material/IconButton";
 import Drawer from "@mui/material/Drawer";
 import FooterLoop from "./assets/Loops/FooterLoop.mp4";
@@ -60,9 +60,7 @@ const App = () => {
         <div className="row">
           <div className="column">
             <div className="logo">
-              <video autoPlay loop muted>
-                <source src={logo} type="video/mp4" alt="GIF video" />
-              </video>
+            <img src={logo} alt="GIF image" />
             </div>
           </div>
 
@@ -74,9 +72,7 @@ const App = () => {
           {/* col3 : FLAMINGO*/}
           <div className="column column-wide">
             <div className="flamingo">
-              <video autoPlay loop muted>
-                <source src={flamingo} type="video/mp4" alt="GIF video" />
-              </video>
+              <img src={flamingo} alt="flamingo" />
             </div>
           </div>
 
@@ -85,11 +81,11 @@ const App = () => {
             <div className="desktop-navbar">
               <Link to="/work" className="anchor">
                 <span className="nav-link">Work</span>
-                <SouthEastIcon className="icon" />
+                <img src={SouthEastIcon} className="icon" style={{paddingLeft:'10px'}} />
               </Link>
               <Link to="/about" className="anchor">
                 <span className="nav-link">About Me</span>
-                <SouthEastIcon className="icon" />
+                <img src={SouthEastIcon} className="icon" style={{paddingLeft:'10px'}}/>
               </Link>
             </div>
             <div className="ham">
@@ -128,6 +124,22 @@ const App = () => {
               </IconButton>
             </div>
             <Drawer anchor="right" open={isOpen} onClose={toggleDrawer(false)}>
+              <Drawer
+                anchor="right"
+                open={isOpen}
+                onClose={toggleDrawer(false)}
+              >
+                <IconButton onClick={toggleDrawer(false)}>
+                  <img
+                    src={Close}
+                    alt="dropdown"
+                    className="close-icon"
+                    style={{ display: "block", color: "black" }}
+                  />
+                </IconButton>
+                {list()}
+              </Drawer>
+
               {list()}
             </Drawer>
           </div>
@@ -136,13 +148,13 @@ const App = () => {
 
       {/* FOOTER PART */}
       <div className="footer">
-      <video autoPlay loop muted playsInline className="footer-bg">
+        <video autoPlay loop muted playsInline className="footer-bg">
           <source src={FooterLoop} type="video/mp4" />
         </video>
         {/* Left part of footer */}
         <div className="left">
           <h3>Education</h3>
-          <p style={{ fontWeight: "bold" }}>Bachelor of Engineering</p>
+          <p style={{ fontWeight: "700" , fontSize:"14px" }}>Bachelor of Engineering</p>
           <p style={{ fontStyle: "italic", color: "rgba(255, 255, 255, 0.7)" }}>
             2019-2023
           </p>
@@ -168,7 +180,7 @@ const App = () => {
         <div className="right">
           <h3>Contact</h3>
           <p>raghavgkk@gmail.com</p>
-          <p>work.raghav99@gmail.com</p>
+          <p style={{paddingBottom:'10px'}}>work.raghav99@gmail.com</p>
           <br />
           <p style={{ fontWeight: "600" }}>+91 79762 14528</p>
           <br />
@@ -177,29 +189,41 @@ const App = () => {
             style={{
               display: "flex",
               alignItems: "center",
-              
             }}
           >
-            <div className="footer-icon-bar">
-            <a href="https://www.behance.net/raghavsharma3" target="_blank">
-              <img
-                src={Behance}
-                className="footer-icon"
-                style={{ color: "white", width: "35px", height: "35px", paddingBottom:"14px" }}
-              />
-            </a>
-            <a href="https://instagram.com/raghav._.xd?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noreferrer">
-              <InstagramIcon
-                className="footer-icon"
-                style={{ color: "white" }}
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/-raghavsharma/" target="_blank" rel="noreferrer">
-              <LinkedInIcon
-                className="footer-icon"
-                style={{ color: "white" }}
-              />
-            </a>
+            <div className="footer-icon-bar" style={{marginLeft:'-18px'}}>
+              <a href="https://www.behance.net/raghavsharma3" target="_blank">
+                <img
+                  src={Behance}
+                  className="footer-icon"
+                  style={{
+                    color: "white",
+                    width: "40px",
+                    height: "40px",
+                    paddingBottom: "11px",
+                  }}
+                />
+              </a>
+              <a
+                href="https://instagram.com/raghav._.xd?igshid=OGQ5ZDc2ODk2ZA=="
+                target="_blank"
+                rel="noreferrer"
+              >
+                <InstagramIcon
+                  className="footer-icon"
+                  style={{ color: "white" }}
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/-raghavsharma/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <LinkedInIcon
+                  className="footer-icon"
+                  style={{ color: "white" }}
+                />
+              </a>
             </div>
           </div>
         </div>

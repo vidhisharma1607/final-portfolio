@@ -11,13 +11,13 @@ import { Link } from 'react-router-dom';
 const ProjectItemForVideo = ({imageUrl,title,description,routerLink}) => {
   return (
     <Card sx={{ width: 312, height:460 , margin:"10px" , marginBottom:"25px",  background:"black" ,'@media screen and (max-width: 650px)': {
-        width: '75%', // Reduce width for mobile view
+        width: '68%', // Reduce width for mobile view
         height: 'auto', // Set height to auto for mobile view to maintain aspect ratio
         margin: "4px", // Adjust margin for mobile view
       }}}>    <CardActionArea LinkComponent={Link} to={routerLink}>
       <CardMedia
     //   sx={{autoPlay:"true"}}
-        component="video"
+        component="img"
         sx={{
         
           height: {
@@ -31,9 +31,6 @@ const ProjectItemForVideo = ({imageUrl,title,description,routerLink}) => {
         
         src={imageUrl}
         alt="green iguana"
-       autoPlay
-       loop
-       muted
         // controls
       />
       <CardContent sx={{background:"black", fontSize :"22px" , paddingLeft:"0px"}  } >

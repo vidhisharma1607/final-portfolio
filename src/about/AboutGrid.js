@@ -14,7 +14,7 @@ const AboutGrid = () => {
           component="img"
           sx={{
             height:"320px",
-            width:"202px",
+            width:"230px",
             margin:0.5,
             borderRadius:2,
             objectFit: 'cover',
@@ -37,7 +37,7 @@ const AboutGrid = () => {
           component="img"
           sx={{
             height:"320px",
-            // width:"202px",
+            width:"230px",
             margin:0.5,
             borderRadius:2,
             '@media screen and (max-width: 768px)': {

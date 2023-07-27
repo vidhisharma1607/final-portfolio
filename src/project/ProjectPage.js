@@ -6,8 +6,8 @@ import HeaderBar from '../header/HeaderBar'
 import image1 from "../assets/images/first.png"
 import image2 from "../assets/images/second.png"
 import image3 from "../assets/images/third.png"
-import image4 from "../assets/images/video4.mp4"
-import image6 from "../assets/images/video6.mp4"
+import image4 from "../assets/images/video4.gif"
+import image6 from "../assets/images/video6.gif"
 import image5 from "../assets/images/fifth.png"
 import ProjectItemForVideo from './ProjectItemForVideo'
 // import Navbar from '../header/Header'

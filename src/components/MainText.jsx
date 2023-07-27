@@ -15,14 +15,14 @@ const MiddlePart = () => {
           <span className="bold"> Interaction Designer </span>
           with a passion for creating designs that not only look great, but also
           <span className="bold"> serve a purpose.</span> With a focus on
-          <span className="bold">user experience</span> and a knack for
+          <span className="bold"> user experience</span> and a knack for
           <span className="bold"> problem-solving</span>, I create designs that
           connect with audiences and achieve real-world results.
         </div>
       </div>
       <span className="download-icon">
         <div className="lower-part">
-          <a href="https://drive.google.com/file/d/1c6i3TqlyNQqL-12y3V--PbhwQ0Xhw9x8/view?usp=sharing" >
+          <a href="https://drive.google.com/file/d/1c6i3TqlyNQqL-12y3V--PbhwQ0Xhw9x8/view?usp=sharing" target="blank" >
             <img className="download" src={DownloadIcon} alt="Download Icon" />
             <div className="cv">Download CV</div>
           </a>

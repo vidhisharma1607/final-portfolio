@@ -13,17 +13,16 @@ import { Link } from 'react-router-dom';
 
 const HeaderBar = () => {
   return (
-    <Box sx={{ flexGrow: 1, width:"72%" , margin:"auto", justifyContent:"space-around" }}>
+    <Box sx={{ flexGrow: 1, width:"65%" , margin:"auto", justifyContent:"space-between" }}>
     <AppBar position="static" sx={{background : "black" }}>
       <Toolbar >
-        <Button LinkComponent={Link} to="/" >
-      <ArrowBackIcon  sx={{color: "white" , '@media screen and (max-width: 450px)':{
-        marginLeft:"-100%"
+      <Button LinkComponent={Link} to="/" >
+      <ArrowBackIcon  sx={{color: "white" , marginLeft:"-140%", '@media screen and (max-width: 450px)':{
+        marginLeft:"-180%"
       }}} /></Button>
       {/* <Avatar sx={{ bgcolor:"white"}} src="https://img.freepik.com/premium-photo/beautiful-taj-mahal-sunrise-its-reflection-india-agra_400112-861.jpg" variant="square"></Avatar> */}
-      <Button sx={{marginLeft:"auto" }} LinkComponent={Link} to ="/about"><Typography color={"white"} fontFamily={"poppins"}  fontSize={23} fontWeight={700} >About Me {" "}<SouthEastIcon sx={{fontSize:"23px" , position:"absolute", paddingTop:"5px"}}/></Typography> </Button>
+      <Button sx={{marginLeft:"auto" }} LinkComponent={Link} to ="/about"><a  onMouseEnter={(e) => e.target.style.color = '#F600FF'} onMouseLeave={(e) => e.target.style.color = 'white'}><Typography color={"white"} fontFamily={"poppins"}  fontSize={19} fontWeight={700}> About Me {" "}<SouthEastIcon sx={{fontSize:"19px" , position:"absolute", paddingTop:"4px"}}/></Typography></a> </Button>
       </Toolbar>
-     
     </AppBar>
   </Box>
   )
