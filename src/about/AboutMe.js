@@ -21,6 +21,8 @@ import WorkMenu from "../components/navSubParts";
 import Close from "../assets/icons/Close.png";
 import MenuIcon from "../assets/icons/Menu.png";
 import "../MainPage.css";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+
 // import AboutGridUpdate from "../assets/images/AboutGrid"
 // import AboutMeMobile from './AboutMeMobile';
 
@@ -105,8 +107,27 @@ const AboutMe = () => {
         }}
       >
         <AppBar position="static" sx={{ background: "black" }}>
-          <Toolbar>
-            <Button LinkComponent={Link} to="/work" sx={{ marginLeft: "auto" }}>
+         
+        <Toolbar>
+          <Button LinkComponent={Link} to="/">
+          <a
+                onMouseEnter={(e) => (e.target.style.color = "#F600FF")}
+                onMouseLeave={(e) => (e.target.style.color = "white")}
+              >
+            <ArrowBackIcon
+              sx={{
+                color: "white",
+                fontSize: "30px",
+                marginLeft: "-140%",
+                "@media screen and (max-width: 450px)": {
+                  marginLeft: "-180%",
+                  fontSize: "25px",
+                },
+              }}
+            />
+            </a>
+          </Button>
+            <Button LinkComponent={Link} to="/work" sx={{ marginLeft: "auto", display:"flex" , flexDirection:"row" }}>
               <a
                 onMouseEnter={(e) => (e.target.style.color = "#F600FF")}
                 onMouseLeave={(e) => (e.target.style.color = "white")}
@@ -118,18 +139,19 @@ const AboutMe = () => {
                   color={"white"}
                 >
                   Work{" "}
-                  <SouthEastIcon
-                    sx={{
-                      fontSize: "18px",
-                      position: "absolute",
-                      paddingTop: "5px",
-                    }}
-                  />
+                 
                 </Typography>
               </a>
+              <SouthEastIcon
+                    sx={{
+                      fontSize: "18px",
+                      color:"white"
+                    }}
+                  />
             </Button>
           </Toolbar>
-        </AppBar>
+
+                 </AppBar>
       </Box>
       <LogoBar />
 
