@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import "./MainPage.css";
 import logo from "./assets/Loops/loopWOB.gif";
-import flamingo from "./assets/Loops/Flamingo.mp4";
+import flamingo from "./assets/Loops/Flamingo.gif.gif";
 import TextPart from "./components/MainText";
 import MenuIcon from "./assets/icons/Menu.png";
 import SouthEastIcon from "./assets/icons/workArrow.png";
@@ -60,7 +60,7 @@ const App = () => {
         <div className="row">
           <div className="column">
             <div className="logo">
-            <img src={logo} alt="GIF image" />
+              <img src={logo} alt="GIF image" />
             </div>
           </div>
 
@@ -72,9 +72,7 @@ const App = () => {
           {/* col3 : FLAMINGO*/}
           <div className="column column-wide">
             <div className="flamingo">
-              <video autoPlay loop muted>
-                <source src={flamingo} type="video/mp4" alt="GIF video" />
-              </video>
+              <img src={flamingo} alt="flamingo gif" />
             </div>
           </div>
 
@@ -83,11 +81,19 @@ const App = () => {
             <div className="desktop-navbar">
               <Link to="/work" className="anchor">
                 <span className="nav-link">Work</span>
-                <img src={SouthEastIcon} className="icon" style={{paddingLeft:'10px'}} />
+                <img
+                  src={SouthEastIcon}
+                  className="icon"
+                  style={{ paddingLeft: "10px" }}
+                />
               </Link>
               <Link to="/about" className="anchor">
                 <span className="nav-link">About Me</span>
-                <img src={SouthEastIcon} className="icon" style={{paddingLeft:'10px'}}/>
+                <img
+                  src={SouthEastIcon}
+                  className="icon"
+                  style={{ paddingLeft: "10px" }}
+                />
               </Link>
             </div>
             <div className="ham">
@@ -156,7 +162,9 @@ const App = () => {
         {/* Left part of footer */}
         <div className="left">
           <h3>Education</h3>
-          <p style={{ fontWeight: "700" , fontSize:"14px" }}>Bachelor of Engineering</p>
+          <p style={{ fontWeight: "700", fontSize: "14px" }}>
+            Bachelor of Engineering
+          </p>
           <p style={{ fontStyle: "italic", color: "rgba(255, 255, 255, 0.7)" }}>
             2019-2023
           </p>
@@ -181,8 +189,27 @@ const App = () => {
         {/* right part of footer */}
         <div className="right">
           <h3>Contact</h3>
-          <p>raghavgkk@gmail.com</p>
-          <p style={{paddingBottom:'10px'}}>work.raghav99@gmail.com</p>
+
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
+            {" "}
+            <p style={{ textAlign: "left" }}>
+              <a
+                href="mailto:raghavgkk@gmail.com"
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                raghavgkk@gmail.com
+              </a>
+            </p>{" "}
+            <p style={{ paddingBottom: "10px", textAlign: "left" }}>
+              <a
+                href="mailto:work.raghav99@gmail.com"
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                work.raghav99@gmail.com
+              </a>
+            </p>{" "}
+          </div>
+
           <br />
           <p style={{ fontWeight: "600" }}>+91 79762 14528</p>
           <br />
@@ -193,7 +220,7 @@ const App = () => {
               alignItems: "center",
             }}
           >
-            <div className="footer-icon-bar" style={{marginLeft:'-18px'}}>
+            <div className="footer-icon-bar" style={{ marginLeft: "-18px" }}>
               <a href="https://www.behance.net/raghavsharma3" target="_blank">
                 <img
                   src={Behance}
@@ -230,9 +257,9 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="last" >
+      <div className="last">
         Made with ❤️ by{" "}
-        <span style={{ fontWeight: "600", color: "rgba(255, 255, 255, 1)",  }}>
+        <span style={{ fontWeight: "600", color: "rgba(255, 255, 255, 1)" }}>
           {" "}
           Raghav Sharma
         </span>

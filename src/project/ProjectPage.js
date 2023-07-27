@@ -76,6 +76,7 @@ routerLink:"/project/paws&wings"}
     imageUrl={image6}
     title={"NID Portfolio"}
     description={"All India Rank 3 | Graphic Design 2023 "}
+    routerLink={"https://www.canva.com/design/DAFeIm1fSjc/xjWB03OYWrMj1YrwVDF0JA/view"}
     />
         </Box>
         <Box width="80%" margin="auto"  display="flex"
